@@ -1,0 +1,58 @@
+<div>
+    <style>
+        p {
+            text-decoration: underline;
+        }
+    </style>
+    <p ng-click="$ctrl.returnToStart()">Go back to the start</p>
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input ng-if="!$ctrl.currentNode.children[0].data" ng-model="$ctrl.preSaveBuffer.children[0].data" type="text">
+                <p  ng-if="$ctrl.currentNode.children[0].data"
+                    ng-click="$ctrl.jumpToChild(0)">
+                    {{$ctrl.currentNode.children[0].data}}
+                </p>
+                <button ng-click="$ctrl.addChild(0)">submit</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input ng-if="!$ctrl.currentNode.children[1].data" ng-model="$ctrl.preSaveBuffer.children[1].data" type="text">
+                <p  ng-if="$ctrl.currentNode.children[1].data"
+                    ng-click="$ctrl.jumpToChild(1)">
+                    {{$ctrl.currentNode.children[1].data}}
+                </p>
+                <button ng-click="$ctrl.addChild(1)">submit</button>
+            </td>
+            <td>{{$ctrl.currentNode.data}}</td>
+            <td>
+                <input ng-if="!$ctrl.currentNode.children[2].data" ng-model="$ctrl.preSaveBuffer.children[2].data" type="text">
+                <p  ng-if="$ctrl.currentNode.children[2].data"
+                    ng-click="$ctrl.jumpToChild(2)">
+                    {{$ctrl.currentNode.children[2].data}}
+                </p>
+                <button ng-click="$ctrl.addChild(2)">submit</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input ng-if="!$ctrl.currentNode.children[3].data" ng-model="$ctrl.preSaveBuffer.children[3].data" type="text">
+                <p  ng-if="$ctrl.currentNode.children[3].data"
+                    ng-click="$ctrl.jumpToChild(3)">
+                    {{$ctrl.currentNode.children[3].data}}
+                </p>
+                <button ng-click="$ctrl.addChild(3)">submit</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</div>
