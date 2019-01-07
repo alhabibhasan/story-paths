@@ -1,6 +1,5 @@
 # story-paths
 
-Someone told me to make a web app that allows you to write stories with multiple sentances. Each of which can lead to many 
-different sentances. And so on.
+So I watched the new Netflix interactive movie -- Bandersnatch. Need I say more?
 
-This is a rough implememntation of that request.
+It's not pretty but gets the job done.
